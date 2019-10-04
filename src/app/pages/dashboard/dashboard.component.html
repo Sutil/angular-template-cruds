@@ -1,0 +1,112 @@
+<h3 class="title" ></h3>
+
+<mat-card class="page-content">
+
+
+    <div class="row mb-4">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <card-counter *ngIf="!loading"
+                [icon]="'branding_watermark'"
+                [title]="'Brands'"
+                [value]="brandCount"
+                (updateClicked)="updateBrand()"
+                ></card-counter>
+            <div *ngIf="loading" class="loading">
+                <mat-spinner></mat-spinner>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+                <card-counter *ngIf="!loading"
+                    [icon]="'directions_car'"
+                    [title]="'Models'"
+                    [value]="modelCount"
+                    [backgroundColor]="'red'"
+                    (updateClicked)="updateModel()"
+                ></card-counter>
+                <div *ngIf="loading" class="loading">
+                    <mat-spinner></mat-spinner>
+                </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+                <card-counter *ngIf="!loading"
+                [icon]="'person'"
+                [title]="'Owners'"
+                [value]="ownerCount"
+                [backgroundColor]="'blue'"
+                (updateClicked)="updateOwner()"
+            ></card-counter>
+            <div *ngIf="loading" class="loading">
+                <mat-spinner></mat-spinner>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+                <card-counter *ngIf="!loading"
+                    [icon]="'store'"
+                    [title]="'Dealership'"
+                    [value]="dealershipCount"
+                    [backgroundColor]="'orange'"
+                    (updateClicked)="updateDealership()"
+            ></card-counter>
+            <div *ngIf="loading" class="loading">
+                <mat-spinner></mat-spinner>
+            </div>
+        </div>
+    </div>
+
+    <mat-card class="mb-3">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                    <donut-chart-sm *ngIf="!loading"
+                        [idChart]="'idPurchaseDonutChart'" 
+                        [data]="dealershipsSales"
+                        [title]="'Sales per Dealership'" 
+                        [description]="'Purchases on this week'"
+                        [labels]="dealershipLabels"
+                        [tooltipDescription]="''"
+                ></donut-chart-sm>
+                
+                <div class="loading">
+                    <mat-spinner *ngIf="loading"></mat-spinner>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                    <stacked-bar-chart *ngIf="!loading"
+                            [backgroundColor]="'blue'"
+                            [idChart]="'idPurchaseBarChart'"
+                            [title]="'Day you sell more'"
+                            [description]="'Considering the last 180 days'"
+                            [data]="daySellMore"
+                        ></stacked-bar-chart>
+                  
+                  <div class="loading">
+                      <mat-spinner *ngIf="loading" ></mat-spinner>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <line-chart-sm
+                    *ngIf="!loading"
+                    [backgroundColor]="'red'"
+                    [idChart]="'idLineChart'"
+                    [title]="'New Customers'"
+                    [description]="'Last 12 months'"
+                    [data]="newCustomersData"
+                ></line-chart-sm>
+            </div>
+        </div>
+    </mat-card>
+
+    <mat-card class="mb-3">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <presenca-anual-chart></presenca-anual-chart>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <horas-trabalhadas-anual-chart></horas-trabalhadas-anual-chart>
+            </div>
+            <div class="col-12">
+                <isv-anual-chart></isv-anual-chart>
+            </div>
+        </div>
+
+    </mat-card>

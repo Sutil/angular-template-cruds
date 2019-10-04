@@ -1,0 +1,12 @@
+<stacked-bar-chart *ngIf="!loading"
+  [backgroundColor]="'yellow'"
+  [idChart]="'chartIsvSemanal'"
+  [title]="'Itens Sem Venda'"
+  [description]="'ISVs por dia'"
+  [data]="isvs"
+  (update)="update()"
+  ></stacked-bar-chart>
+
+<div class="loading">
+    <mat-spinner *ngIf="loading" ></mat-spinner>
+</div>

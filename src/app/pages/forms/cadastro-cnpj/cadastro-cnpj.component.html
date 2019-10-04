@@ -1,0 +1,16 @@
+<dynamic-form-array-wrapper formArrayTitle='CNPJs' formArrayIcon='business_center'
+ [formGroup]="parentForm"
+ (onAddButtonClick)="pushEntity()"
+  (onRemoveButtonClick)="popEntity()">
+
+  <div class="container" *ngIf="parentForm !== undefined" formArrayName="{{entityName}}">
+    <div class="row" *ngFor="let telefone of parentForm.get(entityName).controls; let i = index" [formGroupName]="i">
+      <mat-form-field class="col-4">
+        <input matInput placeholder="CNPJ" name="cnpjFornecedor" formControlName="cnpjFornecedor" required >
+      </mat-form-field>
+      <button  type="button" mat-icon-button (click)="removeAt(i)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</dynamic-form-array-wrapper>

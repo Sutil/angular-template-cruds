@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "version": 0,
+        "name":"Insert Brand"
+    },
+    {
+        "id": 2,
+        "version": 0,
+        "name":"Edit brand"
+    },
+    {
+        "id": 3,
+        "version": 0,
+        "name": "Delete Brand"
+    }
+]

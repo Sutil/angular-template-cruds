@@ -1,0 +1,11 @@
+<card-counter *ngIf="!loading"
+  [icon]="'person'"
+  [title]="'Promotores'"
+  [value]="value"
+  [backgroundColor]="'red'"
+  (updateClicked)="update()"
+></card-counter>
+
+<div *ngIf="loading" class="loading">
+  <mat-spinner></mat-spinner>
+</div>

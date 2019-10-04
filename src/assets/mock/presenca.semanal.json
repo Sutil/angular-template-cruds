@@ -1,0 +1,37 @@
+[
+    {
+        "data": 1534734000000,
+        "presencas": 49,
+        "faltas": 21
+    },
+    {
+        "data": 1534820400000,
+        "presencas": 48,
+        "faltas": 20
+    },
+    {
+        "data": 1534906800000,
+        "presencas": 49,
+        "faltas": 18
+    },
+    {
+        "data": 1534993200000,
+        "presencas": 48,
+        "faltas": 22
+    },
+    {
+        "data": 1535079600000,
+        "presencas": 0,
+        "faltas": 0
+    },
+    {
+        "data": 1535166000000,
+        "presencas": 0,
+        "faltas": 0
+    },
+    {
+        "data": 1535252400000,
+        "presencas": 0,
+        "faltas": 0
+    }
+]

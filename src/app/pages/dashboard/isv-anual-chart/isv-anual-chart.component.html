@@ -1,0 +1,13 @@
+<line-chart-md *ngIf="!loading"
+  [icon]="'report'"
+  [title]="'SKU x ISV'"
+  [idChart]="'isvAnualChart'"
+  [data]="data"
+  [color]="'yellow'"
+  (update)="update()"
+>
+</line-chart-md>
+
+<div class="loading">
+  <mat-spinner *ngIf="loading"></mat-spinner>
+</div>

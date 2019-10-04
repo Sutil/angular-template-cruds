@@ -1,0 +1,80 @@
+[{
+    "id": 1,
+    "version": 0,
+    "nome": "Carta de apresentação da empresa fornecedora",
+    "descricao": "indicando a pessoa que irá prestar o serviço, o tempo que prestará o serviço, a jornada a ser exercida, em quais as filiais da empresa, cláusula contratual onde a empresa assume os riscos, inclusive trabalhista; Se for por agência, indicar somente qual a agência que prestará os serviços (02 Vias Originais)",
+    "obrigatorio": true,
+    "validade": 90
+  }, {
+    "id": 2,
+    "version": 0,
+    "nome": "Carta de apresentação da Agência",
+    "descricao": "indicando a pessoa que irá prestar o serviço, o tempo que prestará o serviço, a jornada a ser exercida, em quais as filiais da empresa, cláusula contratual onde a empresa assume os riscos, inclusive trabalhistas e a relação de empresas a ser representada por este prestador de serviços (02 vias originais)",
+    "obrigatorio": false,
+    "validade": 90
+  }, {
+    "id": 3,
+    "version": 0,
+    "nome": "Contrato de trabalho ou ficha registro",
+    "descricao": "para que seja comprovado o vinculo empregatício com a empresa fornecedora ou com a agencia de serviços temporários (copia)",
+    "obrigatorio": true,
+    "validade": 90
+  },
+  {
+    "id": 4,
+    "version": 0,
+    "nome": "Carteira de trabalho",
+    "descricao": "Carteira de trabalho com o devido registro da empresa fornecedora ou da agencia de emprego (quando for temporário, a carteira de trabalho deverá ter no campo de anotações gerais, a devida anotação da data de inicio e termino do contrato) – original e copia das paginas da fotografia, da qualificação e da anotação do contrato de trabalho – efetivo ou temporário",
+    "obrigatorio": false,
+    "validade": 90
+  }, {
+    "id": 5,
+    "version": 0,
+    "nome": "Cadastro de Pessoa Física",
+    "descricao": "CPF Original e cópia - frente e verso",
+    "obrigatorio": true,
+    "validade": 90
+  }, {
+    "id": 6,
+    "version": 0,
+    "nome": "Cédula de Identidade - R.G.",
+    "descricao": "Original e cópia - frente e verso",
+    "obrigatorio": true,
+    "validade": 90
+  }, {
+    "id": 7,
+    "version": 0,
+    "nome": "Exame Médico Admissional",
+    "descricao": "",
+    "obrigatorio": true,
+    "validade": 90
+  }, {
+    "id": 8,
+    "version": 0,
+    "nome": "Atestado de Antecedentes Criminais",
+    "descricao": "",
+    "obrigatorio": true,
+    "validade": 90
+  }, {
+    "id": 9,
+    "version": 0,
+    "nome": "Crachá de Identificação da Contratante",
+    "descricao": "Crachá de identificação da empresa que o contratou, com a identificação dos prestadores de serviços",
+    "obrigatorio": true,
+    "validade": 90
+  }, {
+    "id": 10,
+    "version": 0,
+    "nome": "Cópia de CNPJ da empregadora",
+    "descricao": "",
+    "obrigatorio": true,
+    "validade": 90
+  }, {
+    "id": 11,
+    "version": 0,
+    "nome": "Cópia do Atestado Médico",
+    "descricao": "",
+    "obrigatorio": true,
+    "validade": 90
+  }
+]

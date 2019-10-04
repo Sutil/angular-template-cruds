@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "version": 1,
+        "nome": "Indústria"
+    },
+    {
+        "id": 2,
+        "version": 1,
+        "nome": "Comércio"
+    },
+    {
+        "id": 3,
+        "version": 1,
+        "nome": "Prestação de Serviço"
+    }
+]

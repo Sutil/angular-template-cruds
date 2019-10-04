@@ -1,0 +1,101 @@
+@import '../../../styles.scss';
+@import '../../../colors.scss';
+
+.card-chart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-content {
+    padding: 3px 20px;
+}
+
+.card-header {
+    border-radius: 5px;
+    margin: -20px 15px 0;
+    position: relative;
+}
+
+.card-header.rose {
+    background: linear-gradient(60deg, mat-color($md-sctwarn, A400), mat-color($md-sctwarn, A700));
+}
+
+.card-header.green {
+    background: linear-gradient(60deg, mat-color($md-sctprimary, 200), mat-color($md-sctprimary, 300));
+}
+
+.card-header.blue {
+    background: linear-gradient(60deg, mat-color($blue, 400), mat-color($blue, 500));
+}
+
+.card-header.yellow {
+    background: linear-gradient(60deg, mat-color($yellow, 400), mat-color($yellow, 500));
+}
+
+.card-header.red {
+    background: linear-gradient(60deg, mat-color($red, 400), mat-color($red, 500));
+}
+
+.card-header.orange {
+    background: linear-gradient(60deg, mat-color($orange, 400), mat-color($orange, 500));
+}
+
+.card-title-chart {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: map-get(map-get($md-sctprimary, contrast), 50);
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 1.3em;
+}
+
+.card-desc-chart {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.2em;
+    color: map-get(map-get($md-sctprimary, contrast), 50);
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 0.9em;
+}
+
+.card-footer {
+    font-size: 15px;
+    color: #BBBBBB;
+    padding: 0;
+}
+
+.card-footer mat-icon.mat-icon.material-icons {
+    font-size: 16px;
+}
+
+.total-donut-chart {
+    position: absolute;
+    color: #fff;
+    align-content: center;
+    width: 30%;
+    height: 30%;
+    top: 40%;
+    left: 36%;
+    text-align: center;
+}
+
+::ng-deep {
+    .ct-series-a .ct-slice-donut-solid {
+        fill: mat-color($blue, 50);
+    }
+
+    .ct-series-b .ct-slice-donut-solid {
+        fill: mat-color($blue, 300);
+    }
+}
+

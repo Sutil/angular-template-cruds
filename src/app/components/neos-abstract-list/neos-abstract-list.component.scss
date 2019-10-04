@@ -1,0 +1,29 @@
+  table {
+    width: 100%;
+  }
+  
+  .mat-column-editar {
+    text-align: right;
+    justify-content: flex-end;
+  }
+  .spinner-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button-add {
+    float: right;
+    // margin-top: 0.5rem;
+    // margin-bottom: 1rem;
+    margin: 0 20px 0 20px;
+  }
+  
+  .filter-input {
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+  

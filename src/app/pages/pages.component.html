@@ -1,0 +1,76 @@
+<div [class.dark-theme]="isDark">
+  <!-- <mat-toolbar color="primary">
+    <button mat-icon-button class="mr-3" (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title-app" >App Title</span>
+    <div [ngStyle]="{'visibility': isLoading ? 'visible' : 'hidden'}">
+      <mat-spinner color="accent" diameter="32"></mat-spinner>
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="usermenu" class="ml-auto">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #usermenu="matMenu">
+      <button mat-menu-item [routerLink]="'/pages/seguranca/changepassword'"><mat-icon>lock</mat-icon>Change password</button>
+      <button mat-menu-item [routerLink]="'/pages/sobre'"><mat-icon>info</mat-icon>About</button>
+      <button mat-menu-item (click)="logout()"><mat-icon>input</mat-icon>Logout</button>
+    </mat-menu>
+  </mat-toolbar> -->
+
+  <mat-sidenav-container>
+    <mat-sidenav [mode]="navMode" opened="{{sideBarOpened}}" class="mat-elevation-z2" >
+
+      <mat-nav-list >
+        <ng-container *ngFor="let parent of menu">
+          <nav *ngIf="!parent.children">
+            <a mat-list-item [routerLink]="parent.link" >
+              <mat-icon mat-list-icon *ngIf="parent.icon">{{parent.icon}}</mat-icon>
+              <span matLine>{{parent.name}}</span>
+            </a>
+          </nav>
+
+          <nav *ngIf="parent.children">
+            <h3 mat-subheader (click)="parent.open = !parent.open" class="app-menu-item" >{{parent.name}}
+              <mat-icon class="ml-auto">{{parent.open? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</mat-icon>
+            </h3>
+            <div [@expandMenu]="parent.open">
+              <a mat-list-item *ngFor="let item of parent.children" [routerLink]="parent.link.concat(item.link)" class="app-submenu-item" (click)="closeSidenavIfIsMobile()" >
+                <mat-icon mat-list-icon *ngIf="item.icon">{{item.icon}}</mat-icon>
+                <mat-icon mat-list-icon *ngIf="item.svgIcon" [svgIcon]="item.svgIcon"></mat-icon>
+                <span matLine>{{item.name}}</span>
+                <span *ngIf="item.subName" matLine>{{item.subName}}</span>
+              </a>
+            </div>
+          </nav>
+        </ng-container>
+      </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="row pt-2 pl-2">
+        <div class="col-2 col-md-1">
+          <button mat-mini-fab (click)="sidenav.toggle()" >
+              <mat-icon>menu</mat-icon>
+          </button></div>
+        <div class="col-7 col-md-10">
+            <span class="title-app pt-3" ><h2>App Title</h2></span>
+            <div [ngStyle]="{'visibility': isLoading ? 'visible' : 'hidden'}">
+              <mat-spinner color="accent" diameter="32"></mat-spinner>
+            </div>
+        </div>
+        <div class="col-2 col-md-1">
+            <button mat-mini-fab [matMenuTriggerFor]="usermenu" class="ml-auto">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #usermenu="matMenu">
+              <button mat-menu-item [routerLink]="'/pages/seguranca/changepassword'"><mat-icon>lock</mat-icon>Change password</button>
+              <button mat-menu-item [routerLink]="'/pages/sobre'"><mat-icon>info</mat-icon>About</button>
+              <button mat-menu-item (click)="logout()"><mat-icon>input</mat-icon>Logout</button>
+            </mat-menu>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

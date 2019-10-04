@@ -1,0 +1,161 @@
+@import '../../../styles.scss';
+@import '../../../colors.scss';
+
+$blue: (
+    100: #BBDEFB,
+    200: #90CAF9,
+    300: #64B5F6,
+    400: #42A5F5,
+    500: #2196F3,
+);
+
+$yellow: (
+    100: #FFF9C4,
+    200: #FFF59D,
+    300: #FFD54F,
+    400: #FFEE58,
+    500: #FFC107,
+);
+
+
+
+$chart-color: (
+    a : #e5f4f3,
+    b : #3F51B5,
+    c : #673AB7,
+    d : #FFEB3B,
+    e : #009688,
+    f : #FF9800,
+    g : #F44336,
+    h : #2196F3,
+    i : #CDDC39,
+    j : #795548,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+.card-chart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-content {
+    padding: 3px 20px;
+}
+
+.card-header {
+    border-radius: 5px;
+    margin: -20px 15px 0;
+    position: relative;
+}
+
+
+.card-header.rose {
+    background: linear-gradient(60deg, mat-color($md-sctwarn, A400), mat-color($md-sctwarn, A700));
+}
+
+.card-header.green {
+    background: linear-gradient(60deg, mat-color($md-sctprimary, 200), mat-color($md-sctprimary, 300));
+}
+
+.card-header.blue {
+    background: linear-gradient(60deg, mat-color($blue, 400), mat-color($blue, 500));
+}
+
+.card-header.yellow {
+    background: linear-gradient(60deg, mat-color($yellow, 400), mat-color($yellow, 500));
+}
+
+.card-header.red {
+    background: linear-gradient(60deg, mat-color($red, 400), mat-color($red, 500));
+}
+
+.card-header.orange {
+    background: linear-gradient(60deg, mat-color($orange, 400), mat-color($orange, 500));
+}
+
+.card-title-chart {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #3C4858;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 1.3em;
+}
+
+.card-desc-chart {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.2em;
+    color: #3C4858;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 0.9em;
+}
+
+.card-footer {
+    font-size: 15px;
+    color: #BBBBBB;
+    padding: 0;
+}
+
+.card-footer mat-icon.mat-icon.material-icons {
+    font-size: 16px;
+}
+
+::ng-deep {
+    .ct-series .ct-line {
+        stroke-width: 3px;
+    }
+
+    .ct-series .ct-point {
+        stroke-width: 7px;
+    }
+
+    .ct-series-a .ct-line-chart {
+        stroke: mat-color($chart-color, a);
+    }
+
+    .ct-series-b .ct-line-chart {
+        stroke: mat-color($chart-color, b);
+    }
+
+    .ct-series-a .ct-point-chart {
+        stroke: mat-color($chart-color, a);
+    }
+
+    .ct-series-b .ct-point-chart {
+        stroke: mat-color($chart-color, b);
+    }
+
+    // .ct-label-chart {
+    //     color: mat-color($chart-color, a);
+    // }
+
+    .ct-grid-chart {
+        stroke: rgba(255, 255, 255, 0.2);
+    }
+}

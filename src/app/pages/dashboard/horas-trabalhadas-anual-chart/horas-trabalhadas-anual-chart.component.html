@@ -1,0 +1,13 @@
+<line-chart-md *ngIf="!loading"
+  [icon]="'alarm'"
+  [idChart]="idChart"
+  [title]="'Horas Trabalhadas x Horas Faltosas'"
+  [data]="data"
+  [color]="'blue'"
+  (update)="update()"
+>
+</line-chart-md>
+
+<div class="loading">
+  <mat-spinner *ngIf="loading"></mat-spinner>
+</div>

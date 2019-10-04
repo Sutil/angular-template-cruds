@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "version": 0,
+        "name": "Acura"
+    },
+    {
+        "id": 2,
+        "version": 0,
+        "name": "Alfa Romeo"
+    },
+    {
+        "id": 3,
+        "version": 0,
+        "name": "Aston Martin"
+    },
+    {
+        "id": 4,
+        "version": 0,
+        "name": "Audi"
+    },
+    {
+        "id": 5,
+        "version": 0,
+        "name": "Bentley"
+    },
+    {
+        "id": 6,
+        "version": 0,
+        "name": "BMW"
+    },
+    {
+        "id": 7,
+        "version": 0,
+        "name": "Bugati"
+    },
+    {
+        "id": 8,
+        "version": 0,
+        "name": "Buik"
+    }
+]

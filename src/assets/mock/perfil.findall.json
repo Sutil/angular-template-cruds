@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "version": 0,
+        "nome": "Analista",
+        "recursos": [
+            {
+                "id": 1,
+                "version": 0,
+                "nome": "Editar Usuário",
+                "metodo": "Editar_Usuario",
+                "url": "/pages/forms/administracao/usuario"
+            }
+        ],
+        "dataCadastro": ""
+    },
+    {
+        "id": 2,
+        "version": 0,
+        "nome": "Engenheiro",
+        "recursos": [],
+        "dataCadastro": ""
+    }
+]

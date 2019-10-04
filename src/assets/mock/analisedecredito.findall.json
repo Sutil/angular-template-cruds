@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "cliente": {
+            "razaoSocial": "Empresa 1",
+            "nomeFantasia": "Nome Fantasia",
+            "cnpj":"27567040000176",
+            "site":"http://empresa1.com.br",
+            "telefone": "(44) 3030-3333",
+            "celular":"(44) 9 9999-8989",
+            "regiao": {"id": 1, "version": 1, "nome": "Norte"},
+            "segmento": {"id": 1, "version": 1, "nome": "Alimentos"},
+            "atividade": {"id": 1, "version": 1, "nome": "Distribuidor"},
+            "ramo": {"id": 2, "version": 1, "nome": "Comércio"},
+            "endereco": {
+                "cep": "87005270",
+                "endereco": "Avenida Teste, 123",
+                "bairro": "Vila da Cidade",
+                "complemento": "Sala 300",
+                "estado": "PR",
+                "cidade": "Maringá"
+            }
+        },
+        "socios": [
+            {
+                "nome":"Fausto Silva",
+                "percentual": 50,
+                "cpf": "12345678910",
+                "funcao": "Administrador"
+            },
+            {
+                "nome":"Silvio Santos",
+                "percentual": 50,
+                "cpf": "12345678910",
+                "funcao": "Gerente"
+            }
+        ],
+        "dataAnalise": "2018-03-29T14:47:50.848Z",
+        "validadeAnalise": "2019-03-29T14:47:50.848Z",
+        "resultado": ""
+    }
+]

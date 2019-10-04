@@ -1,0 +1,12 @@
+<form-wrapper [formTitle]="title" [component]="this">
+  <div [formGroup]="entityForm">
+    <div class="row">
+      <mat-form-field class="col-6">
+        <input matInput name="razaoSocial" formControlName="razaoSocial" placeholder="Razão Social" required/>
+      </mat-form-field>
+      <mat-form-field class="col-6">
+        <input matInput name="cnpj" formControlName="cnpj" placeholder="CNPJ" />
+      </mat-form-field>
+    </div>
+  </div>
+</form-wrapper>

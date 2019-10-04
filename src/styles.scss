@@ -1,0 +1,328 @@
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+/* For use in src/lib/core/theming/_palette.scss */
+/* feito com http://mcg.mbitson.com */
+$cyan: (
+    50 : #E0F7FA,
+    100 : #B2EBF2,
+    200 : #80DEEA,
+    300 : #4DD0E1,
+    400 : #26C6DA,
+    500 : #00BCD4,
+    600 : #00ACC1,
+    700 : #0097A7,
+    800 : #00838F,
+    900 : #006064,
+    A100 : #84FFFF,
+    A200 : #18FFFF,
+    A400 : #00E5FF,
+    A700 : #00B8D4,
+    contrast: (
+        50 : #555555,
+        100 : #555555,
+        200 : #555555,
+        300 : #555555,
+        400 : #555555,
+        500 : #555555,
+        600 : #555555,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #555555,
+        A200 : #555555,
+        A400 : #555555,
+        A700 : #555555,
+    )
+);
+
+$pink: (
+    50:#FCE4EC,
+    100:#F8BBD0,
+    200:#F48FB1,
+    300:#F06292,
+    400:#EC407A,
+    500:#E91E63,
+    600:#D81B60,
+    700:#C2185B,
+    800:#AD1457,
+    900:#880E4F,
+    contrast: (
+        50 : #333333,
+        100 : #333333,
+        200 : #333333,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #ffffff,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+
+);
+
+$purple: (
+    50: #F3E5F5,
+    100: #E1BEE7,
+    200: #CE93D8,
+    300: #BA68C8,
+    400: #AB47BC,
+    500: #9C27B0,
+    600: #8E24AA,
+    700: #7B1FA2,
+    800: #6A1B9A,
+    900: #4A148C,
+    A100: #EA80FC,
+    A200: #E040FB,
+    A400: #D500F9,
+    A700: #AA00FF,
+    contrast: (
+        50 : #777777,
+        100 : #777777,
+        200 : #777777,
+        300 : #777777,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #777777,
+        A200 : #777777,
+        A400 : #777777,
+        A700 : #777777,
+    )
+);
+
+$deepPurple: (
+   50: #EDE7F6,
+    100: #D1C4E9,
+    200:#B39DDB,
+    300: #9575CD,
+    400: #7E57C2,
+    500: #673AB7,
+    600: #5E35B1,
+    700: #512DA8,
+    800: #4527A0,
+    900: #311B92,
+    A100: #B388FF,
+    A200: #7C4DFF,
+    A400: #651FFF,
+    A700: #6200EA,
+    contrast: (
+        50 : #333333,
+        100 : #333333,
+        200 : #333333,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #777777,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$lightBlue: (
+    50: #E1F5FE,
+    100: #B3E5FC,
+    200: #81D4FA,
+    300: #4FC3F7,
+    400: #29B6F6,
+    500: #03A9F4,
+    600: #039BE5,
+    700: #0288D1,
+    800: #0277BD,
+    900: #01579B,
+    contrast: (
+        50 : #555555,
+        100 : #555555,
+        200 : #555555,
+        300 : #555555,
+        400 : #555555,
+        500 : #555555,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #555555,
+        A200 : #555555,
+        A400 : #555555,
+        A700 : #555555,
+    )
+);
+
+$teal: (
+    50:#E0F2F1,
+    100: #B2DFDB,
+    200: #80CBC4,
+    300: #4DB6AC,
+    400: #26A69A,
+    500: #009688,
+    600: #00897B,
+    700: #00796B,
+    800: #00695C,
+    900: #004D40,
+    contrast: (
+        50 : #777777,
+        100 : #777777,
+        200 : #777777,
+        300 : #777777,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #777777,
+        A200 : #777777,
+        A400 : #777777,
+        A700 : #777777,
+    )
+);
+
+$yellow: (
+    50: #FFFDE7,
+    100: #FFF9C4,
+    200: #FFF59D,
+    300: #FFF176,
+    400: #FFEE58,
+    500: #FFEB3B,
+    600: #FDD835,
+    700: #FBC02D,
+    800: #F9A825,
+    900: #F57F17,
+    A100: #FFFF8D,
+    A200: #FFFF00,
+    A400: #FFEA00,
+    A700: #FFD600,
+    contrast: (
+        50 : #333333,
+        100 : #333333,
+        200 : #333333,
+        300 : #333333,
+        400 : #333333,
+        500 : #333333,
+        600 : #333333,
+        700 : #333333,
+        800 : #333333,
+        900 : #333333,
+        A100 : #333333,
+        A200 : #333333,
+        A400 : #333333,
+        A700 : #333333,
+    )
+);
+
+
+$ambar: (
+    50: #FFF8E1,
+    100: #FFECB3,
+    200: #FFE082,
+    300: #FFD54F,
+    400: #FFCA28,
+    500: #FFC107,
+    600: #FFB300,
+    700: #FFA000,
+    800: #FF8F00,
+    900: #FF6F00,
+    A100: #FFE57F,
+    A200: #FFD740,
+    A400: #FFC400,
+    A700: #FFAB00,
+    contrast: (
+        50 : #777777,
+        100 : #777777,
+        200 : #777777,
+        300 : #777777,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #777777,
+        A200 : #777777,
+        A400 : #777777,
+        A700 : #777777,
+    )
+);
+
+
+$md-sctprimary: $pink;
+$md-sctaccent: $pink;
+$intensity: 400;
+
+$primary: $md-sctprimary;
+$secondary: $md-sctaccent;
+
+$md-sctwarn: (
+    50 : #f9e6e6,
+    100 : #f0c1c1,
+    200 : #e79797,
+    300 : #dd6d6d,
+    400 : #d54e4e,
+    500 : #ce2f2f,
+    600 : #c92a2a,
+    700 : #c22323,
+    800 : #bc1d1d,
+    900 : #b01212,
+    A100 : #ffe0e0,
+    A200 : #ffadad,
+    A400 : #ff7a7a,
+    A700 : #ff6161,
+    contrast: (
+        50 : #777777,
+        100 : #777777,
+        200 : #777777,
+        300 : #777777,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #777777,
+        A200 : #777777,
+        A400 : #777777,
+        A700 : #777777,
+    )
+);
+
+body, html {
+    height: 100%;
+}
+
+$sct-app-primary: mat-palette($md-sctprimary);
+$sct-app-accent: mat-palette($md-sctaccent);
+$sct-app-warn: mat-palette($md-sctwarn);
+
+$sct-light-theme: mat-light-theme($sct-app-primary, $sct-app-accent, $sct-app-warn);
+$sct-dark-theme: mat-dark-theme($sct-app-primary, $sct-app-accent, $sct-app-warn);
+
+@include angular-material-theme($sct-light-theme);
+
+.dark-theme {
+    @include angular-material-theme($sct-dark-theme);
+}
+
+button:focus {
+    outline: 0;
+}
+
+.title {
+    margin-left: 50px;
+}
+

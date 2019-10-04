@@ -1,0 +1,456 @@
+[{
+  "id": 1,
+  "version": 0,
+  "codigoPreCadastro": "193",
+  "nome": "José Carlos Almeida",
+  "rg": "21890841",
+  "cpf": "586.310.525-90",
+  "dataPreCadastro": "2018-01-05",
+  "nomePai": "Manuel Almeida",
+  "nomeMae": "Maria Souza",
+  "status": "PENDENTE",
+  "motivoReprova": {},
+  "copiaRg": true,
+  "copiaCpf": false,
+  "copiaEndereco": true,
+  "tipoTerceiro": "Reciclagem"
+}, {
+  "id": 2,
+  "version": 0,
+  "codigoPreCadastro": "192",
+  "nome": "Rodrigo Almeida",
+  "rg": "21890841",
+  "cpf": "586.310.525-91",
+  "tipoTerceiro": "Zeladoria",
+  "dataPreCadastro": "2018-01-05",
+  "nomePai": "Manuel Almeida",
+  "nomeMae": "Maria Souza",
+  "status": "APROVADO",
+  "motivoReprova": {},
+  "copiaRg": true,
+  "copiaCpf": false,
+  "copiaEndereco": false,
+  "contratante": {
+    "id": 1,
+    "version": 0,
+    "nome": "Trade Sul Alimentos",
+    "cnpj": "36.969.649/0001-62",
+    "email": "",
+    "dataCadastro": "2013-06-23 13:02",
+    "telefones": [],
+    "tipo": "Trade",
+    "fornecedores": [{
+      "id": 1,
+      "version": 0,
+      "nome": "Fornecedor 1",
+      "endereco": {
+        "id": 1,
+        "version": 0,
+        "estado": "SP",
+        "cidade": "São Paulo",
+        "bairro": "Vila Tramontano",
+        "cep": "05690-100",
+        "logradouro": "Praça Professor João Alves da Silva",
+        "numero": "1456",
+        "complemento": ""
+      },
+      "telefones": [],
+      "cnpj": "91.961.380/0001-86",
+      "dataCadastro": "2013-06-23 13:02",
+      "email": "",
+      "gruposProdutos": [{
+        "id": 1,
+        "version": 0,
+        "nome": "Grupo 1",
+        "fornecedores": [{
+          "id": 1,
+          "version": 0,
+          "nome": "Fornecedor 1",
+          "endereco": {
+            "id": 1,
+            "version": 0,
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "bairro": "Vila Tramontano",
+            "cep": "05690-100",
+            "logradouro": "Praça Professor João Alves da Silva",
+            "numero": "1456",
+            "complemento": ""
+          },
+          "telefones": [],
+          "cnpj": "91.961.380/0001-86",
+          "dataCadastro": "2013-06-23 13:02"
+        }],
+        "categoria": {
+          "id": 1,
+          "version": 0,
+          "nome": "Higiene"
+        },
+        "filial": {
+          "id": 1,
+          "mediaHoras": 5,
+          "skus": [{
+              "id": 0,
+              "version": 0,
+              "codigo": "A0",
+              "nome": "Produto 0",
+              "descricao": "Descricao do Produto 0",
+              "isv": false,
+              "estoque180": true,
+              "val10": false
+            },
+            {
+              "id": 0,
+              "version": 0,
+              "codigo": "A0",
+              "nome": "Produto 0",
+              "descricao": "Descricao do Produto 0",
+              "isv": false,
+              "estoque180": true,
+              "val10": false
+            }
+          ],
+          "version": 0,
+          "nome": "Filial 1",
+          "cnpj": "05.570.714/0001-59",
+          "dataCadastro": "",
+          "matriz": {
+            "id": 1,
+            "version": 0,
+            "nome": "Empresa 1",
+            "endereco": {
+              "id": 1,
+              "version": 0,
+              "estado": "SP",
+              "cidade": "São Paulo",
+              "bairro": "Vila Tramontano",
+              "cep": "05690-100",
+              "logradouro": "Praça Professor João Alves da Silva",
+              "numero": "1456",
+              "complemento": ""
+            },
+            "telefones": [],
+            "cnpj": "91.961.380/0001-86",
+            "dataCadastro": "2013-06-23 13:02"
+          },
+          "telefones": [],
+          "endereco": {
+            "id": 1,
+            "version": 0,
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "bairro": "Vila Tramontano",
+            "cep": "05690-100",
+            "logradouro": "Praça Professor João Alves da Silva",
+            "numero": "1456",
+            "complemento": ""
+          },
+          "ativos": 78,
+          "presencas": 43,
+          "problemas": [],
+          "informacoes": []
+        }
+      }]
+    }],
+    "endereco": {
+      "id": 999,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "supervisores": [{
+      "id": 1,
+      "version": 0,
+      "nome": "José Carlos Almeida",
+      "rg": "21890841",
+      "cpf": "586.310.525-90",
+      "endereco": {
+        "id": 1,
+        "version": 0,
+        "estado": "ES",
+        "cidade": "Vitória",
+        "bairro": "Vila Tramontano",
+        "cep": "05690-100",
+        "logradouro": "Praça Professor João Alves da Silva",
+        "numero": "1456",
+        "complemento": ""
+      },
+      "telefones": [],
+      "email": ""
+    }]
+  },
+  "filiais": [{
+      "id": 1,
+      "mediaHoras": 5,
+      "skus": [{
+          "id": 0,
+          "version": 0,
+          "codigo": "A0",
+          "nome": "Produto 0",
+          "descricao": "Descricao do Produto 0",
+          "isv": false,
+          "estoque180": true,
+          "val10": false
+        },
+        {
+          "id": 0,
+          "version": 0,
+          "codigo": "A0",
+          "nome": "Produto 0",
+          "descricao": "Descricao do Produto 0",
+          "isv": false,
+          "estoque180": true,
+          "val10": false
+        }
+      ],
+      "version": 0,
+      "nome": "Filial 1",
+      "cnpj": "05.570.714/0001-59",
+      "dataCadastro": "",
+      "matriz": {
+        "id": 1,
+        "version": 0,
+        "nome": "Empresa 1",
+        "endereco": {
+          "id": 1,
+          "version": 0,
+          "estado": "SP",
+          "cidade": "São Paulo",
+          "bairro": "Vila Tramontano",
+          "cep": "05690-100",
+          "logradouro": "Praça Professor João Alves da Silva",
+          "numero": "1456",
+          "complemento": ""
+        },
+        "telefones": [],
+        "cnpj": "91.961.380/0001-86",
+        "dataCadastro": "2013-06-23 13:02"
+      },
+      "telefones": [],
+      "endereco": {
+        "id": 1,
+        "version": 0,
+        "estado": "SP",
+        "cidade": "São Paulo",
+        "bairro": "Vila Tramontano",
+        "cep": "05690-100",
+        "logradouro": "Praça Professor João Alves da Silva",
+        "numero": "1456",
+        "complemento": ""
+      },
+      "ativos": 78,
+      "presencas": 43,
+      "problemas": [],
+      "informacoes": []
+    },
+    {
+      "id": 2,
+      "mediaHoras": 5.3,
+      "skus": [{
+        "id": 0,
+        "version": 0,
+        "codigo": "A0",
+        "nome": "Produto 0",
+        "descricao": "Descricao do Produto 0",
+        "isv": true,
+        "estoque180": false,
+        "val10": true
+      }],
+      "version": 0,
+      "nome": "Filial 2",
+      "cnpj": "05.570.714/0002-58",
+      "dataCadastro": "",
+      "matriz": {
+        "id": 1,
+        "version": 0,
+        "nome": "Empresa 1",
+        "endereco": {
+          "id": 1,
+          "version": 0,
+          "estado": "SP",
+          "cidade": "São Paulo",
+          "bairro": "Vila Tramontano",
+          "cep": "05690-100",
+          "logradouro": "Praça Professor João Alves da Silva",
+          "numero": "1456",
+          "complemento": ""
+        },
+        "telefones": [],
+        "cnpj": "91.961.380/0001-86",
+        "dataCadastro": "2013-06-23 13:02"
+      },
+      "telefones": [],
+      "endereco": {
+        "id": 2,
+        "version": 0,
+        "estado": "RJ",
+        "cidade": "Rio de Janeiro",
+        "bairro": "Vila Tramontano",
+        "cep": "05690-100",
+        "logradouro": "Praça Professor João Alves da Silva",
+        "numero": "1456",
+        "complemento": ""
+      },
+      "ativos": 98,
+      "presencas": 38,
+      "problemas": [{
+        "id": 1,
+        "version": 0,
+        "titulo": "Produtos na gôndola 3D danificados",
+        "descricao": "Os produtos que estão na gôndola 3D apresentam avarias, há latas de ervilha que estão vazando",
+        "dataPostagem": "06-03-2017"
+      }],
+      "informacoes": [{
+        "id": 2,
+        "version": 0,
+        "titulo": "Produtos na gôndola 3C repostos",
+        "descricao": "Os produtos que estavam em falta foram repostos",
+        "dataPostagem": "10-03-2017"
+      }]
+    },
+    {
+      "id": 3,
+      "mediaHoras": 6,
+      "skus": [{
+        "id": 0,
+        "version": 0,
+        "codigo": "A0",
+        "nome": "Produto 0",
+        "descricao": "Descricao do Produto 0",
+        "isv": true,
+        "estoque180": false,
+        "val10": true
+      }],
+      "version": 0,
+      "nome": "Filial 3",
+      "cnpj": "05.570.714/0003-21",
+      "dataCadastro": "",
+      "matriz": {
+        "id": 1,
+        "version": 0,
+        "nome": "Empresa 1",
+        "endereco": {
+          "id": 1,
+          "version": 0,
+          "estado": "SP",
+          "cidade": "São Paulo",
+          "bairro": "Vila Tramontano",
+          "cep": "05690-100",
+          "logradouro": "Praça Professor João Alves da Silva",
+          "numero": "1456",
+          "complemento": ""
+        },
+        "telefones": [],
+        "cnpj": "91.961.380/0001-86",
+        "dataCadastro": "2013-06-23 13:02"
+      },
+      "telefones": [],
+      "endereco": {
+        "id": 3,
+        "version": 0,
+        "estado": "PR",
+        "cidade": "Curitiba",
+        "bairro": "Vila Tramontano",
+        "cep": "05690-100",
+        "logradouro": "Praça Professor João Alves da Silva",
+        "numero": "1456",
+        "complemento": ""
+      },
+      "ativos": 89,
+      "presencas": 8,
+      "problemas": [],
+      "informacoes": []
+    },
+    {
+      "id": 4,
+      "mediaHoras": 6.2,
+      "skus": [{
+        "id": 0,
+        "version": 0,
+        "codigo": "A0",
+        "nome": "Produto 0",
+        "descricao": "Descricao do Produto 0",
+        "isv": true,
+        "estoque180": false,
+        "val10": true
+      }],
+      "version": 0,
+      "nome": "Filial 4",
+      "cnpj": "05.570.714/0004-09",
+      "dataCadastro": "2013-11-11",
+      "matriz": {
+        "nome": "teste"
+      },
+      "telefones": [],
+      "endereco": {
+        "id": 1,
+        "version": 0,
+        "estado": "ES",
+        "cidade": "Vitória",
+        "bairro": "Vila Tramontano",
+        "cep": "05690-100",
+        "logradouro": "Praça Professor João Alves da Silva",
+        "numero": "1456",
+        "complemento": ""
+      },
+      "ativos": 105,
+      "presencas": 103,
+      "problemas": [{
+        "id": 2,
+        "version": 0,
+        "titulo": "Falta de produtos na gôndola 4E",
+        "descricao": "Não há produtos no estoque para repor na gôndola 4E, é necessário fazer um novo pedido",
+        "dataPostagem": "02-04-2017"
+      }],
+      "informacoes": []
+    },
+    {
+      "id": 5,
+      "mediaHoras": 5.4,
+      "skus": [{
+        "id": 0,
+        "version": 0,
+        "codigo": "A0",
+        "nome": "Produto 0",
+        "descricao": "Descricao do Produto 0",
+        "isv": true,
+        "estoque180": false,
+        "val10": true
+      }],
+      "version": 0,
+      "nome": "Filial 5",
+      "cnpj": "05.570.714/0005-87",
+      "dataCadastro": "2012-12-12",
+      "matriz": {
+        "nome": "teste2"
+      },
+      "telefones": [],
+      "endereco": {
+        "id": 1,
+        "version": 0,
+        "estado": "AM",
+        "cidade": "Amazonas",
+        "bairro": "Vila Tramontano",
+        "cep": "05690-100",
+        "logradouro": "Praça Professor João Alves da Silva",
+        "numero": "1456",
+        "complemento": ""
+      },
+      "ativos": 65,
+      "presencas": 46,
+      "problemas": [],
+      "informacoes": [{
+        "id": 1,
+        "version": 0,
+        "titulo": "Produtos na gôndola 2C repostos",
+        "descricao": "Os produtos que estavam em falta foram repostos",
+        "dataPostagem": "09-03-2017"
+      }]
+    }
+  ]
+}]

@@ -1,0 +1,16 @@
+<form-wrapper [formTitle]="title" [component]="this">
+    <div [formGroup]="entityForm">
+        <div class="row">
+            <mat-form-field class="col-6">
+                <input matInput name="nome" formControlName="nome" placeholder="Nome" required/>
+            </mat-form-field>
+
+            <mat-form-field class="col-4">
+                <mat-select [compareWith]="compareEmpresas" formControlName="empresa" placeholder="Empresa responsável" required>
+                    <mat-option>--</mat-option>
+                    <mat-option *ngFor="let empresa of empresas" [value]="empresa">{{ empresa.razaoSocial }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+</form-wrapper>

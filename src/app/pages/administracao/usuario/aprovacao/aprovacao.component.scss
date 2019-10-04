@@ -1,0 +1,11 @@
+.mat-column-editar {
+    text-align: right;
+    &.mat-header-cell {
+        margin-right: 5px;
+    }
+}
+
+mat-spinner {
+    margin-left: auto;
+    margin-right: auto;
+}

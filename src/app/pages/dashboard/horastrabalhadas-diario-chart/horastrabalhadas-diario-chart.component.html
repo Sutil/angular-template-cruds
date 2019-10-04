@@ -1,0 +1,13 @@
+<donut-chart-sm *ngIf="!loading"
+  [idChart]="idChart"
+  [backgroundColor]="'blue'"
+  [data]="data"
+  [description]="'Horas esperadas e trabalhadas hoje'"
+  [title]="'Horas trabalhadas'"
+  [tooltipDescription]="'Percentual de horas trabalhadas'"
+  (update)="update()"
+  >
+</donut-chart-sm>
+<div *ngIf="loading" class="loading">
+  <mat-spinner></mat-spinner>
+</div>

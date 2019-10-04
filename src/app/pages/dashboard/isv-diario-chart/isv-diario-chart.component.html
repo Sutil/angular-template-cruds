@@ -1,0 +1,14 @@
+<donut-chart-sm *ngIf="!loading"
+  [idChart]="idChart"
+  [backgroundColor]="'orange'"
+  [title]="'Itens Sem Venda'"
+  [description]="'Quantidade de ISV x Itens Vendidos para o dia'"
+  [tooltipDescription]="'Percentual de Itens Sem Venda'"
+  [data]="data"
+  (update)="update()"
+>
+
+</donut-chart-sm>
+<div *ngIf="loading" class="loading">
+  <mat-spinner></mat-spinner>
+</div>

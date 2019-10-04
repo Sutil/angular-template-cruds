@@ -1,0 +1,37 @@
+[
+    {
+        "data": 1534809600000,
+        "horasEsperadas": 544,
+        "horasTrabalhadas": 263.129999999999995
+    },
+    {
+        "data": 1534896000000,
+        "horasEsperadas": 536,
+        "horasTrabalhadas": 283.279999999999973
+    },
+    {
+        "data": 1534982400000,
+        "horasEsperadas": 560,
+        "horasTrabalhadas": 12.0600000000000005
+    },
+    {
+        "data": 1535068800000,
+        "horasEsperadas": 0,
+        "horasTrabalhadas": 0
+    },
+    {
+        "data": 1535155200000,
+        "horasEsperadas": 0,
+        "horasTrabalhadas": 0
+    },
+    {
+        "data": 1535241600000,
+        "horasEsperadas": 0,
+        "horasTrabalhadas": 0
+    },
+    {
+        "data": 1535328000000,
+        "horasEsperadas": 0,
+        "horasTrabalhadas": 0
+    }
+]

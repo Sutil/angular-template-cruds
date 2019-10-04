@@ -1,0 +1,17 @@
+<div class="card card-chart mat-elevation-z1">
+    <div class="card-header mat-elevation-z5 {{ backgroundColor }}" >
+        <div id="{{ idChart }}" class="ct-chart"></div>
+    </div>
+    <div class="card-content">
+        <h4 class="card-title-chart">{{ title }}</h4>
+        <p class="card-desc-chart">{{ description }}</p>
+    </div>
+
+
+    <div class="card-footer">
+            <button mat-icon-button (click)="update()" >
+                    <mat-icon aria-label="Update Chart">update</mat-icon>
+                    Atualizar
+            </button>
+    </div>
+</div>

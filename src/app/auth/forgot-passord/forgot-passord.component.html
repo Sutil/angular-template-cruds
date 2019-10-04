@@ -1,0 +1,25 @@
+<div class="background">
+  <div class="col-md-12">
+    <mat-card class="col-md-4">
+      <mat-card-header class="header">
+        <h4>Recuperação de senha</h4>
+      </mat-card-header>
+      <mat-card-content>
+        <div [formGroup]="entityForm">
+          <div class="row">
+            <mat-icon>mail_outline</mat-icon>
+            <mat-form-field class="col-9">
+              <input matInput placeholder="E-mail" name="email" formControlName="email" required/>
+            </mat-form-field>
+          </div>
+
+          <div class="row justify-content-center m-3">
+            <button [disabled]="!entityForm.valid || isWaiting" mat-button mat-raised-button color="primary" (click)="recuperar()">Recuperar senha</button>
+            <mat-spinner class="ml-3" *ngIf="isWaiting" diameter="24"></mat-spinner>
+            <button mat-button mat-raised-button color="primary" class="ml-3" [routerLink]="'/login'">Ir para login</button>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

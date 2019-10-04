@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "version": 0,
+    "cnpjFornecedor": "01.001.001"
+  },
+  {
+    "id": 2,
+    "version": 0,
+    "cnpjFornecedor": "01.001.002"
+  },
+  {
+    "id": 3,
+    "version": 0,
+    "cnpjFornecedor": "01.001.003"
+  },
+  {
+    "id": 4,
+    "version": 0,
+    "cnpjFornecedor": "01.001.003"
+  }
+]

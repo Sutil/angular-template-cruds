@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "version": 0,
+        "username": "mark.sloan",
+        "name": "Mark Sloan",
+        "password": "abcdef"
+    },
+    {
+        "id": 2,
+        "version": 0,
+        "username": "derik.sheperd",
+        "nome": "Derik Sheperd",
+        "password": "abcdef"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "version": 1,
+        "nome": "Norte"
+    },
+    {
+        "id": 2,
+        "version": 1,
+        "nome": "Sul"
+    },
+    {
+        "id": 3,
+        "version": 1,
+        "nome": "Leste"
+    },
+    {
+        "id": 4,
+        "version": 1,
+        "nome": "Oeste"
+    },
+    {
+        "id": 5,
+        "version": 1,
+        "nome": "Nordeste"
+    },
+    {
+        "id": 6,
+        "version": 1,
+        "nome": "Sudeste"
+    },
+    {
+        "id": 7,
+        "version": 1,
+        "nome": "Noroeste"
+    },
+    {
+        "id": 8,
+        "version": 1,
+        "nome": "Sudoeste"
+    }
+]

@@ -1,0 +1,9 @@
+<neos-abstract-list
+  [dataSource]="dataSource" 
+  [colunas]="colunas" 
+  (editButtonClicked)="onEditClick($event)" 
+  (addButtonClicked)="onAddClick()"
+  (deleteButtonClicked)="onDeleteClick($event)">
+  <h3 class="title"  list-header>Resources</h3>
+  
+</neos-abstract-list>

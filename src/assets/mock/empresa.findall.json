@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "version": 0,
+    "razaoSocial": "Empresa 1",
+    "cnpj":"25658148000176"
+  },
+  {
+    "id": 2,
+    "version": 0,
+    "razaoSocial": "Empresa 2",
+    "cnpj":"25658148000177"
+  },
+  {
+    "id": 3,
+    "version": 0,
+    "razaoSocial": "Empresa 3",
+    "cnpj":"25658148000178"
+  }
+]

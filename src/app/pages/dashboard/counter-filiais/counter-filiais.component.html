@@ -1,0 +1,10 @@
+<card-counter *ngIf="!loading"
+  [icon]="'store'"
+  [title]="'Filias'"
+  [value]="value"
+  (updateClicked)="update()"
+></card-counter>
+
+<div *ngIf="loading" class="loading">
+  <mat-spinner></mat-spinner>
+</div>

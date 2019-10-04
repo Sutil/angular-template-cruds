@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-header>
+    <ng-content select="[list-header]"></ng-content>
+  </mat-card-header>
+  <mat-form-field class="col-12">
+    <input matInput (keyup)="dataSource.filter = $event.target.value.trim().toLowerCase()" placeholder="Procurar">
+  </mat-form-field>
+  <mat-table [dataSource]="dataSource" matSort *ngIf="dataSource.data.length > 0">
+    
+    <ng-container matColumnDef="incluir">
+      <mat-header-cell *matHeaderCellDef>Incluir</mat-header-cell>
+      <mat-cell *matCellDef="let entity">
+        <mat-checkbox [checked]="isSelected(entity)"
+        (change)="toggleEntidade(entity)" ></mat-checkbox>
+      </mat-cell>
+    </ng-container>
+    
+    <ng-container *ngIf="colunas.length > 0">
+      <ng-container *ngFor="let column of colunas" [matColumnDef]="column.columnDef">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>{{ column.header }}</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ column.cell(row) }}</mat-cell>
+      </ng-container>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedCols"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedCols;"></mat-row>
+  </mat-table>
+  <mat-paginator #paginator [pageSize]="8" [pageSizeOptions]="[8, 16, 24]" itemsPerPageLabel="Itens por página">
+  </mat-paginator>
+  <ng-container *ngIf='entidadesSelecionadas.length > 0'>
+    <div class="row">
+      <h6>
+        <strong>Selecionados</strong>
+      </h6>
+    </div>
+    <div class="row">
+      <ng-container *ngFor='let e of entidadesSelecionadas; let i = index'>
+        {{e.nome}}{{i === entidadesSelecionadas.length - 1 ? '' : ','}} </ng-container>
+    </div>
+  </ng-container>
+</mat-card>

@@ -1,0 +1,11 @@
+<card-counter *ngIf="!loading"
+  [icon]="'report'"
+  [title]="'Média ISV mês'"
+  [value]="value"
+  [backgroundColor]="'orange'"
+  (updateClicked)="update()"
+></card-counter>
+
+<div *ngIf="loading" class="loading">
+  <mat-spinner></mat-spinner>
+</div>

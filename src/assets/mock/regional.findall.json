@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nome": "Regional A",
+        "divisao": {
+            "id": 1,
+            "version": 0,
+            "nome": "Divisao 1"
+        }
+    },
+    {
+        "id": 1,
+        "nome": "Regional B",
+        "divisao": {
+            "id": 1,
+            "version": 0,
+            "nome": "Divisao 2"
+        }
+    },
+    {
+        "id": 1,
+        "nome": "Regional C",
+        "divisao": {
+            "id": 1,
+            "version": 0,
+            "nome": "Divisao 3"
+        }
+    }
+]

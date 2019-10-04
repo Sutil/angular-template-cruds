@@ -1,0 +1,518 @@
+[
+    {
+        "nome": "",
+        "id": 1,
+        "version": 0,
+        "dataAnalise": "2018-03-29T14:47:50.848Z",
+        "empresaAnalisada": {
+            "nome": "Empresa 1",
+            "id": 1,
+            "version": 0,
+            "org_id": "",
+            "cnpj": "25658148000176"
+        },
+        "criterios": [
+            {
+                "criterio": {
+                    "id": 1,
+                    "version": 0,
+                    "nome": "Cliente em Região de Fronteira",
+                    "tipo": 0,
+                    "descricao": "Cliente de fronteira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 1,
+                    "version": 0,
+                    "resposta": "Sim",
+                    "risco": 1
+                }
+            },
+            {
+                "criterio": {
+                    "id": 2,
+                    "version": 0,
+                    "nome": "Financiamento externo ativo",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida em outra financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3.5,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 2,
+                    "version": 0,
+                    "resposta": "Não",
+                    "risco": 0
+                }
+            },
+            {
+                "criterio": {
+                    "id": 3,
+                    "version": 0,
+                    "nome": "Financiamento interno ativo",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida nesta financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 2,
+                    "version": 0,
+                    "resposta": "Não",
+                    "risco": 0
+                }
+            },
+            {
+                "criterio": {
+                    "id": 4,
+                    "version": 0,
+                    "nome": "Sem faturamento nos últimos 2 meses",
+                    "tipo": 0,
+                    "descricao": "Cliente não faturou nos últimos dois meses",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3.8,
+                    "obrigatorio": false
+                },
+                "resposta": {
+                    "id": 1,
+                    "version": 0,
+                    "resposta": "Sim",
+                    "risco": 1
+                }
+            },
+            {
+                "criterio": {
+                    "id": 5,
+                    "version": 0,
+                    "nome": "Percentual do lucro consumido por dívidas.",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida em outra financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Mais 55%",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Menos de 55%",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 4.5,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 2,
+                    "version": 0,
+                    "resposta": "Menos de 55%",
+                    "risco": 0
+                }
+            }
+        ],
+        "status": 0,
+        "resultado": "38.2% ATR; 61.8% BXR; 0.0% Indefinido;"
+    },
+    {
+        "nome": "",
+        "id": 2,
+        "version": 0,
+        "dataAnalise": "2018-03-29T14:49:59.804Z",
+        "empresaAnalisada": {
+            "nome": "Empresa 2",
+            "id": 2,
+            "version": 0,
+            "org_id": "",
+            "cnpj": "25658148000177"
+        },
+        "criterios": [
+            {
+                "criterio": {
+                    "id": 1,
+                    "version": 0,
+                    "nome": "Cliente em Região de Fronteira",
+                    "tipo": 0,
+                    "descricao": "Cliente de fronteira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 2,
+                    "version": 0,
+                    "resposta": "Não",
+                    "risco": 0
+                }
+            },
+            {
+                "criterio": {
+                    "id": 2,
+                    "version": 0,
+                    "nome": "Financiamento externo ativo",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida em outra financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3.5,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 1,
+                    "version": 0,
+                    "resposta": "Sim",
+                    "risco": 1
+                }
+            },
+            {
+                "criterio": {
+                    "id": 3,
+                    "version": 0,
+                    "nome": "Financiamento interno ativo",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida nesta financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 2,
+                    "version": 0,
+                    "resposta": "Não",
+                    "risco": 0
+                }
+            },
+            {
+                "criterio": {
+                    "id": 4,
+                    "version": 0,
+                    "nome": "Sem faturamento nos últimos 2 meses",
+                    "tipo": 0,
+                    "descricao": "Cliente não faturou nos últimos dois meses",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3.8,
+                    "obrigatorio": false
+                },
+                "resposta": {
+                    "id": 2,
+                    "version": 0,
+                    "resposta": "Não",
+                    "risco": 0
+                }
+            },
+            {
+                "criterio": {
+                    "id": 5,
+                    "version": 0,
+                    "nome": "Percentual do lucro consumido por dívidas.",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida em outra financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Mais 55%",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Menos de 55%",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 4.5,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 1,
+                    "version": 0,
+                    "resposta": "Mais 55%",
+                    "risco": 1
+                }
+            }
+        ],
+        "status": 0,
+        "resultado": "44.9% ATR; 55.1% BXR; 0.0% Indefinido;"
+    },
+    {
+        "nome": "",
+        "id": 4,
+        "version": 0,
+        "dataAnalise": "2018-03-29T14:50:51.578Z",
+        "empresaAnalisada": {
+            "nome": "Empresa 3",
+            "id": 3,
+            "version": 0,
+            "org_id": "",
+            "cnpj": "25658148000178"
+        },
+        "criterios": [
+            {
+                "criterio": {
+                    "id": 1,
+                    "version": 0,
+                    "nome": "Cliente em Região de Fronteira",
+                    "tipo": 0,
+                    "descricao": "Cliente de fronteira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 1,
+                    "version": 0,
+                    "resposta": "Sim",
+                    "risco": 1
+                }
+            },
+            {
+                "criterio": {
+                    "id": 2,
+                    "version": 0,
+                    "nome": "Financiamento externo ativo",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida em outra financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3.5,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 2,
+                    "version": 0,
+                    "resposta": "Não",
+                    "risco": 0
+                }
+            },
+            {
+                "criterio": {
+                    "id": 3,
+                    "version": 0,
+                    "nome": "Financiamento interno ativo",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida nesta financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 1,
+                    "version": 0,
+                    "resposta": "Sim",
+                    "risco": 1
+                }
+            },
+            {
+                "criterio": {
+                    "id": 4,
+                    "version": 0,
+                    "nome": "Sem faturamento nos últimos 2 meses",
+                    "tipo": 0,
+                    "descricao": "Cliente não faturou nos últimos dois meses",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Sim",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Não",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 3.8,
+                    "obrigatorio": false
+                },
+                "resposta": {
+                    "id": 1,
+                    "version": 0,
+                    "resposta": "Sim",
+                    "risco": 1
+                }
+            },
+            {
+                "criterio": {
+                    "id": 5,
+                    "version": 0,
+                    "nome": "Percentual do lucro consumido por dívidas.",
+                    "tipo": 0,
+                    "descricao": "Cliente com dívida em outra financeira",
+                    "respostas": [
+                        {
+                            "id": 1,
+                            "version": 0,
+                            "resposta": "Mais 55%",
+                            "risco": 1
+                        },
+                        {
+                            "id": 2,
+                            "version": 0,
+                            "resposta": "Menos de 55%",
+                            "risco": 0
+                        }
+                    ],
+                    "peso": 4.5,
+                    "obrigatorio": true
+                },
+                "resposta": {
+                    "id": 1,
+                    "version": 0,
+                    "resposta": "Mais 55%",
+                    "risco": 1
+                }
+            }
+        ],
+        "status": 0,
+        "resultado": "80.3% ATR; 19.7% BXR; 0.0% Indefinido;"
+    }
+]

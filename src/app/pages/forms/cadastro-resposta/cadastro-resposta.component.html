@@ -1,0 +1,22 @@
+<dynamic-form-array-wrapper formArrayTitle='Respostas' formArrayIcon='question_answer' [formGroup]="parentForm" (onAddButtonClick)="pushEntity()"
+  (onRemoveButtonClick)="popEntity()">
+
+  <div class="container" *ngIf="parentForm !== undefined" formArrayName="{{entityName}}">
+    <div class="row" *ngFor="let resposta of parentForm.get(entityName).controls; let i = index" [formGroupName]="i">
+      <mat-form-field class="col-8">
+        <input matInput placeholder="Descricao" name="descricao" formControlName="descricao" required>
+      </mat-form-field>
+      <!-- <mat-form-field class="col-3">
+        <mat-select placeholder="Risco" formControlName="risco" required>
+          <mat-option>--</mat-option>
+          <mat-option *ngFor="let risco of riscos | enumToArray" [value]="risco.value">
+            {{risco.key}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <mat-form-field class="col-3">
+        <input matInput type="number" placeholder="Risco" name="risco" formControlName="risco" required>
+      </mat-form-field>
+    </div>
+  </div>
+</dynamic-form-array-wrapper>

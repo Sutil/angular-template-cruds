@@ -1,0 +1,29 @@
+[
+    {
+        "id": 4,
+        "nome": "Divisão D",
+        "empresa": {
+            "id": 1,
+            "version": 0,
+            "nome": "Empresa 1"
+        }
+    },
+    {
+        "id": 5,
+        "nome": "Divisão E",
+        "empresa": {
+            "id": 2,
+            "version": 0,
+            "nome": "Empresa 2"
+        }
+    },
+    {
+        "id": 6,
+        "nome": "Divisão F",
+        "empresa": {
+            "id": 3,
+            "version": 0,
+            "nome": "Empresa 3"
+        }
+    }
+]

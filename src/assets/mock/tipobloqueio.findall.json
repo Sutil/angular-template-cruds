@@ -1,0 +1,25 @@
+[{
+  "id": 1,
+  "version": 0,
+  "nome": "NÃO BLOQUEADO"
+}, {
+  "id": 2,
+  "version": 0,
+  "nome": "AGRESSÃO"
+}, {
+  "id": 3,
+  "version": 0,
+  "nome": "DEGUSTAÇÃO"
+}, {
+  "id": 4,
+  "version": 0,
+  "nome": "FURTO"
+}, {
+  "id": 5,
+  "version": 0,
+  "nome": "MÁ CONDUTA"
+}, {
+  "id": 6,
+  "version": 0,
+  "nome": "VECIMENTO MERCADORIA"
+}]

@@ -1,0 +1,13 @@
+<card-icon-updatable 
+  [icon]="icon"
+  [color]="color"
+  [title]="title"
+  (update)="updateClicked()"
+>
+  <div id="{{idChart}}" ></div>
+
+  <div *ngFor="let l of data.legendas" class="legenda">
+    <div class="cor {{ l.cor }}"></div>
+    <div class="texto-legenda">{{ l.legenda }}</div>
+  </div>
+</card-icon-updatable>

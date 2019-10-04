@@ -1,0 +1,13 @@
+<form-wrapper [formTitle]="title" [component]="this">
+  <div [formGroup]="entityForm">
+    <div class="row">
+      <mat-form-field class="col-6">
+        <input matInput formControlName="nome" name="nome" placeholder="Nome" required>
+      </mat-form-field>
+    </div>
+
+    <wtc-associacao-wrapper [colunas]="displayedCols" [entidadeService]="recursoService" [entidadesSelecionadas]="entity.recursos" (onChangeSelected)="onChangeSelected()">
+      <h4 list-header>Recursos</h4>
+    </wtc-associacao-wrapper>
+  </div>
+</form-wrapper>

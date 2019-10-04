@@ -1,0 +1,22 @@
+<form-wrapper [formTitle]="formTitle" [component]="this">
+  <div [formGroup]="entityForm">
+
+    <div class="row">
+      <mat-form-field class="col-12 col-md-6">
+        <input matInput placeholder="Name" formControlName="name" name="name" required>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="col-12 col-md-6">
+        <input matInput placeholder="Login" formControlName="username" name="username" required>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="col-12 col-md-6">
+        <input matInput placeholder="Password" formControlName="password" name="password">
+      </mat-form-field>
+    </div>
+  </div>
+</form-wrapper>

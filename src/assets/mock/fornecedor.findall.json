@@ -1,0 +1,415 @@
+[{
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 1",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": "",
+    "gruposProdutos": [{
+      "id": 1,
+      "version": 0,
+      "nome": "Grupo 1",
+      "fornecedores": [{
+        "id": 1,
+        "version": 0,
+        "nome": "Fornecedor 1",
+        "endereco": {
+          "id": 1,
+          "version": 0,
+          "estado": "SP",
+          "cidade": "São Paulo",
+          "bairro": "Vila Tramontano",
+          "cep": "05690-100",
+          "logradouro": "Praça Professor João Alves da Silva",
+          "numero": "1456",
+          "complemento": ""
+        },
+        "telefones": [],
+        "cnpj": "91.961.380/0001-86",
+        "dataCadastro": "2013-06-23 13:02"
+      }],
+      "categoria": {
+        "id": 1,
+        "version": 0,
+        "nome": "Higiene"
+      },
+      "filial": {
+        "id": 1,
+        "mediaHoras": 5,
+        "skus": [{
+            "id": 0,
+            "version": 0,
+            "codigo": "A0",
+            "nome": "Produto 0",
+            "descricao": "Descricao do Produto 0",
+            "isv": false,
+            "estoque180": true,
+            "val10": false
+          },
+          {
+            "id": 0,
+            "version": 0,
+            "codigo": "A0",
+            "nome": "Produto 0",
+            "descricao": "Descricao do Produto 0",
+            "isv": false,
+            "estoque180": true,
+            "val10": false
+          }
+        ],
+        "version": 0,
+        "nome": "Filial 1",
+        "cnpj": "05.570.714/0001-59",
+        "dataCadastro": "",
+        "matriz": {
+          "id": 1,
+          "version": 0,
+          "nome": "Empresa 1",
+          "endereco": {
+            "id": 1,
+            "version": 0,
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "bairro": "Vila Tramontano",
+            "cep": "05690-100",
+            "logradouro": "Praça Professor João Alves da Silva",
+            "numero": "1456",
+            "complemento": ""
+          },
+          "telefones": [],
+          "cnpj": "91.961.380/0001-86",
+          "dataCadastro": "2013-06-23 13:02"
+        },
+        "telefones": [],
+        "endereco": {
+          "id": 1,
+          "version": 0,
+          "estado": "SP",
+          "cidade": "São Paulo",
+          "bairro": "Vila Tramontano",
+          "cep": "05690-100",
+          "logradouro": "Praça Professor João Alves da Silva",
+          "numero": "1456",
+          "complemento": ""
+        },
+        "ativos": 78,
+        "presencas": 43,
+        "problemas": [],
+        "informacoes": []
+      }
+    }]
+  },
+  {
+    "id": 2,
+    "version": 0,
+    "nome": "Fornecedor 2",
+    "endereco": {
+      "id": 2,
+      "version": 1,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [{
+      "id": 2,
+      "version": 0,
+      "descricao": "Fixo",
+      "ddd": "11",
+      "telefone": "99999-9999",
+      "ramal": ""
+    }],
+    "cnpj": "05.811.103/0001-55",
+    "dataCadastro": "2015-02-08 16:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 3",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 4",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 5",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 1",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 2,
+    "version": 0,
+    "nome": "Fornecedor 2",
+    "endereco": {
+      "id": 2,
+      "version": 1,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [{
+      "id": 2,
+      "version": 0,
+      "descricao": "Fixo",
+      "ddd": "11",
+      "telefone": "99999-9999",
+      "ramal": ""
+    }],
+    "cnpj": "05.811.103/0001-55",
+    "dataCadastro": "2015-02-08 16:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 3",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 4",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 5",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 1",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 2,
+    "version": 0,
+    "nome": "Fornecedor 2",
+    "endereco": {
+      "id": 2,
+      "version": 1,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [{
+      "id": 2,
+      "version": 0,
+      "descricao": "Fixo",
+      "ddd": "11",
+      "telefone": "99999-9999",
+      "ramal": ""
+    }],
+    "cnpj": "05.811.103/0001-55",
+    "dataCadastro": "2015-02-08 16:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 3",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 4",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  },
+  {
+    "id": 1,
+    "version": 0,
+    "nome": "Fornecedor 5",
+    "endereco": {
+      "id": 1,
+      "version": 0,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "bairro": "Vila Tramontano",
+      "cep": "05690-100",
+      "logradouro": "Praça Professor João Alves da Silva",
+      "numero": "1456",
+      "complemento": ""
+    },
+    "telefones": [],
+    "cnpj": "91.961.380/0001-86",
+    "dataCadastro": "2013-06-23 13:02",
+    "email": ""
+  }
+]

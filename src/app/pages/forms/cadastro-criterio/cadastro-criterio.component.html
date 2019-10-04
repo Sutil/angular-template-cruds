@@ -1,0 +1,16 @@
+<dynamic-form-array-wrapper formArrayTitle='Criterios' formArrayIcon='question_answer' [formGroup]="parentForm" (onAddButtonClick)="pushEntity()"
+  (onRemoveButtonClick)="popEntity()">
+
+  <div class="container" *ngIf="parentForm !== undefined" formArrayName="{{entityName}}">
+    <div class="row" *ngFor="let criterio of parentForm.get(entityName).controls; let i = index" [formGroupName]="i">
+
+      <mat-form-field class="col-8">
+          <mat-select placeholder="Nome" formControlName="nome" required>
+              <mat-option>--</mat-option>
+              <mat-option *ngFor="let resposta of criterio.respostas" [value]="resposta">{{ resposta.nome }}</mat-option>
+            </mat-select>
+      </mat-form-field>
+
+    </div>
+  </div>
+</dynamic-form-array-wrapper>

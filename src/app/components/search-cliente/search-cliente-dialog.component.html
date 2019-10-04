@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Buscar cliente</h2>
+<mat-dialog-content>
+  <div class="row">
+    <mat-form-field class="col-6">
+      <input placeholder="CNPJ" matInput [formControl]="cnpjControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayCnpj" (optionSelected)="reflectCnpjChanges($event)">
+        <mat-option *ngFor="let option of empresasFiltradasByCnpj | async" [value]="option">
+          {{ option.cnpj }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <mat-form-field class="col-6">
+      <input placeholder="Razão Social" matInput [formControl]="nomeControl" [matAutocomplete]="autoNome" >
+      <mat-autocomplete #autoNome="matAutocomplete" [displayWith]="displayNome" (optionSelected)="reflectNameChanges($event)">
+        <mat-option *ngFor="let option of empresasFiltradasByNome | async" [value]="option">
+          {{ option.razaoSocial }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button type="button" [mat-dialog-close]="cnpjControl.value">Selecionar</button>
+</mat-dialog-actions>

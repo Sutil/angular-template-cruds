@@ -1,0 +1,12 @@
+<line-chart-md *ngIf="!loading"
+  [icon]="'assignment_ind'"
+  [title]="'Presenças X Faltas'"
+  [idChart]="'presencaMensalChart'"
+  [data]="data"
+  (update)="update()"
+>
+</line-chart-md>
+
+<div class="loading">
+  <mat-spinner *ngIf="loading"></mat-spinner>
+</div>

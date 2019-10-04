@@ -1,0 +1,73 @@
+@import '../../../colors.scss';
+@import '../../../styles.scss';
+
+
+.legenda {
+    margin: 10px;
+    display: flex;
+}
+
+
+.legenda .cor {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+.legenda .cor.green {
+    background-color: mat-color($green, 500);
+}
+
+.legenda .cor.red {
+    background-color: mat-color($red, 500);
+}
+
+.legenda .cor.blue {
+    background-color: mat-color($blue, 500);
+}
+
+.legenda .cor.yellow {
+    background-color: mat-color($yellow, 500);
+}
+
+
+
+.legenda .texto-legenda {
+    font-size: 0.8em;
+    color: #555;
+}
+
+::ng-deep {
+    span.ct-label.ct-horizontal.ct-end.ct-label-rotate.ct-horizontal.ct-end {
+        transform: rotate(-45deg);
+        margin-left: -25px;
+        margin-top: 20px;
+    }
+
+    svg.ct-chart-line {
+        overflow: inherit;
+    }
+
+    .ct-grid.ct-horizontal.ct-md {
+        stroke: rgba(0, 0, 0, 0.3);
+    }
+
+    .ct-series-a .ct-line.green {
+        stroke: mat-color($green, 500);
+    }
+
+    .ct-series-a .ct-line.red {
+        stroke: mat-color($red, 500);
+    }
+
+    .ct-series-a .ct-line.blue{
+        stroke: mat-color($blue, 500);
+    }
+
+    .ct-series-a .ct-line.yellow{
+        stroke: mat-color($yellow, 500);
+    }
+}
+

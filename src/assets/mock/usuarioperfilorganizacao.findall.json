@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "version": 0,
+        "usuario": {
+            "id": 1,
+            "version": 0,
+            "login": "login.test",
+            "email": "login@test.com",
+            "nome": "Mark",
+            "senha": "abcdef",
+            "telefone1": "4430304040",
+            "telefone2": "4420389490",
+            "tipoUsuario": 0
+        },
+        "perfil": {
+            "id": 1,
+            "descricao": "Analist",
+            "nome": "Analist",
+            "recursos": [],
+            "dataCadastro": ""
+        }
+    }
+]

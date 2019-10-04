@@ -1,0 +1,25 @@
+<dynamic-form-array-wrapper formArrayTitle='Telefones' formArrayIcon='phone'
+ [formGroup]="parentForm"
+ (onAddButtonClick)="pushEntity()"
+  (onRemoveButtonClick)="popEntity()" >
+
+  <div class="container" *ngIf="parentForm !== undefined" formArrayName="{{entityName}}">
+    <div class="row" *ngFor="let tel of parentForm.get(entityName).controls; let i = index" [formGroupName]="i">
+      <mat-form-field class="col-4">
+        <input matInput placeholder="Descrição" name="descricao" formControlName="descricao">
+      </mat-form-field>
+      <mat-form-field class="col-1">
+        <input matInput type="number" placeholder="DDD" name="ddd" formControlName="ddd">
+      </mat-form-field>
+      <mat-form-field class="col-3">
+        <input matInput placeholder="Número" name="telefone" formControlName="telefone">
+      </mat-form-field>
+      <mat-form-field class="col-2">
+        <input matInput type="number" placeholder="Ramal" name="ramal" formControlName="ramal">
+      </mat-form-field>
+      <button  type="button" mat-icon-button (click)="removeAt(i)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</dynamic-form-array-wrapper>

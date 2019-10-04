@@ -1,0 +1,11 @@
+<card-counter *ngIf="!loading"
+  [icon]="'assignment_ind'"
+  [title]="'Presenças mês'"
+  [value]="value"
+  [backgroundColor]="'blue'"
+  (updateClicked)="update()"
+></card-counter>
+
+<div *ngIf="loading" class="loading">
+  <mat-spinner></mat-spinner>
+</div>

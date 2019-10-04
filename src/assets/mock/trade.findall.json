@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "version": 0,
+        "nome": "Trade Sul Alimentos",
+        "cnpj": "36.969.649/0001-62",
+        "email": "",
+        "dataCadastro": "2013-06-23 13:02",
+        "telefones": [],
+        "tipo": "Trade",
+        "endereco": {
+            "id": 999,
+            "version": 0,
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "bairro": "Vila Tramontano",
+            "cep": "05690-100",
+            "logradouro": "Praça Professor João Alves da Silva",
+            "numero": "1456",
+            "complemento": ""
+        }
+    },
+    {
+        "id": 2,
+        "version": 0,
+        "nome": "Trade Sul Bebidas",
+        "cnpj": "59.074.349/0001-10",
+        "email": "",
+        "dataCadastro": "2016-03-20 14:32",
+        "telefones": [],
+        "tipo": "Trade",
+        "endereco": {
+            "id": 999,
+            "version": 0,
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "bairro": "Vila Tramontano",
+            "cep": "05690-100",
+            "logradouro": "Praça Professor João Alves da Silva",
+            "numero": "1456",
+            "complemento": ""
+        }
+    },
+    {
+        "id": 3,
+        "version": 0,
+        "nome": "Trade Norte Alimentos",
+        "cnpj": "63.837.215/0001-81",
+        "email": "",
+        "dataCadastro": "2015-08-12 15:52",
+        "telefones": [],
+        "tipo": "Trade",
+        "endereco": {
+            "id": 999,
+            "version": 0,
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "bairro": "Vila Tramontano",
+            "cep": "05690-100",
+            "logradouro": "Praça Professor João Alves da Silva",
+            "numero": "1456",
+            "complemento": ""
+        }
+    },
+    {
+        "id": 4,
+        "version": 0,
+        "nome": "Trade Norte Bebidas",
+        "cnpj": "13.675.031/0001-94",
+        "email": "",
+        "dataCadastro": "2014-11-13 16:55",
+        "telefones": [],
+        "tipo": "Trade",
+        "endereco": {
+            "id": 999,
+            "version": 0,
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "bairro": "Vila Tramontano",
+            "cep": "05690-100",
+            "logradouro": "Praça Professor João Alves da Silva",
+            "numero": "1456",
+            "complemento": ""
+        }
+    }
+]

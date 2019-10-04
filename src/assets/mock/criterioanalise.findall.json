@@ -1,0 +1,117 @@
+[
+    {
+        "id": 1,
+        "version": 0,
+        "nome": "Cliente em Região de Fronteira",
+        "tipo": 0,
+        "descricao": "Cliente de fronteira",
+        "respostas": [
+            {
+                "id":1,
+                "version":0,
+                "resposta": "Sim",
+                "risco": 1
+            },
+            {
+                "id":2,
+                "version":0,
+                "resposta": "Não",
+                "risco": 0
+            }
+        ],
+        "peso": 3.0,
+        "obrigatorio": true
+    },
+    {
+        "id": 2,
+        "version": 0,
+        "nome": "Financiamento externo ativo",
+        "tipo": 0,
+        "descricao": "Cliente com dívida em outra financeira",
+        "respostas": [
+            {
+                "id":1,
+                "version":0,
+                "resposta": "Sim",
+                "risco": 1
+            },
+            {
+                "id":2,
+                "version":0,
+                "resposta": "Não",
+                "risco": 0
+            }
+        ],
+        "peso": 3.5,
+        "obrigatorio": true
+    },
+    {
+        "id": 3,
+        "version": 0,
+        "nome": "Financiamento interno ativo",
+        "tipo": 0,
+        "descricao": "Cliente com dívida nesta financeira",
+        "respostas": [
+            {
+                "id":1,
+                "version":0,
+                "resposta": "Sim",
+                "risco": 1
+            },
+            {
+                "id":2,
+                "version":0,
+                "resposta": "Não",
+                "risco": 0
+            }
+        ],
+        "peso": 3.0,
+        "obrigatorio": true
+    },
+    {
+        "id": 4,
+        "version": 0,
+        "nome": "Sem faturamento nos últimos 2 meses",
+        "tipo": 0,
+        "descricao": "Cliente não faturou nos últimos dois meses",
+        "respostas": [
+            {
+                "id":1,
+                "version":0,
+                "resposta": "Sim",
+                "risco": 1
+            },
+            {
+                "id":2,
+                "version":0,
+                "resposta": "Não",
+                "risco": 0
+            }
+        ],
+        "peso": 3.8,
+        "obrigatorio": false
+    },
+    {
+        "id": 5,
+        "version": 0,
+        "nome": "Percentual do lucro consumido por dívidas.",
+        "tipo": 0,
+        "descricao": "Cliente com dívida em outra financeira",
+        "respostas": [
+            {
+                "id":1,
+                "version":0,
+                "resposta": "Mais 55%",
+                "risco": 1
+            },
+            {
+                "id":2,
+                "version":0,
+                "resposta": "Menos de 55%",
+                "risco": 0
+            }
+        ],
+        "peso": 4.5,
+        "obrigatorio": true
+    }
+]

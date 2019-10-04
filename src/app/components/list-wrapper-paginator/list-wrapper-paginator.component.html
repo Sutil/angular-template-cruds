@@ -1,0 +1,37 @@
+<ng-content select="[list-header]"></ng-content>
+<mat-form-field class="col-12">
+  <input matInput (keyup.enter)="verifyPagination($event.target.value.trim().toLowerCase())" placeholder="Filter">
+</mat-form-field>
+<!-- <mat-spinner *ngIf="dataSource?.data.length === 0" color="accent" diameter="32"></mat-spinner> -->
+<!-- <div [@expand]="dataSource?.data.length > 0"> -->
+<div>
+  <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z1">
+    <ng-container *ngFor="let column of colunas" [matColumnDef]="column.columnDef">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>{{ column.header }}</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ column.cell(row) }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="editar">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let entity">
+        <button type="button" [disabled]='desativarEditar(entity)' mat-icon-button (click)="onEditButtonClick(entity)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button type="button" *ngIf='!desativarExcluir(entity)' mat-icon-button (click)="onDeleteButtonClick(entity)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedCols"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedCols;"></mat-row>
+  </mat-table>
+
+  <mat-paginator [length]="length"
+              [pageSize]="pageSize"
+              [pageSizeOptions]="pageSizeOptions"
+              (page)="pageEvent = onPageChanged($event)">
+</mat-paginator>
+
+</div>
+
+<button *ngIf="add" class="float-right mt-2 mb-3" mat-raised-button (click)="onAddButtonClick()" color="primary">Add</button>

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "version": 1,
+        "nome": "Distribuidor"
+    },
+    {
+        "id": 2,
+        "version": 1,
+        "nome": "Atacado"
+    },
+    {
+        "id": 3,
+        "version": 1,
+        "nome": "Varejo"
+    },
+    {
+        "id": 4,
+        "version": 1,
+        "nome": "Auto Serviço"
+    }
+]

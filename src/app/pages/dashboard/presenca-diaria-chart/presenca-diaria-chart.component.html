@@ -1,0 +1,12 @@
+<donut-chart-sm *ngIf="!loading"
+    [idChart]="idChart" 
+    [data]="data"
+    [title]="'Presença'" 
+    [description]="'Presenças x Faltas de hoje. Veja o percentual de presenças'"
+    [tooltipDescription]="tooltipDescription"
+    (update)="update()"
+></donut-chart-sm>
+
+<div class="loading">
+    <mat-spinner *ngIf="loading"></mat-spinner>
+</div>

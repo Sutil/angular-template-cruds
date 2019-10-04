@@ -1,0 +1,30 @@
+<ng-content select="[list-header]"></ng-content>
+<h1 list-header>Aprovação</h1>
+<mat-form-field class="col-12">
+  <input matInput (keyup)="dataSource.filter = $event.target.value.trim().toLowerCase()" placeholder="Filter">
+</mat-form-field>
+<!-- <mat-spinner *ngIf="dataSource?.data.length === 0" color="accent" diameter="32"></mat-spinner> -->
+<!-- <div [@expand]="dataSource?.data.length > 0"> -->
+<div>
+  <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z1">
+    <ng-container *ngFor="let column of colunas" [matColumnDef]="column.columnDef">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>{{ column.header }}</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ column.cell(row) }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="acao">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let entity">
+        <button type="button" mat-icon-button (click)="aprovar(entity)">
+          Aprovar
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedCols"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedCols;"></mat-row>
+  </mat-table>
+
+  <mat-paginator #paginator [pageSize]="8" [pageSizeOptions]="[8, 16, 24]" class="mat-elevation-z1">
+  </mat-paginator>
+</div>

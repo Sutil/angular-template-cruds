@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "version": 1,
+        "nome": "Alimentos"
+    },
+    {
+        "id": 2,
+        "version": 1,
+        "nome": "Agronegocios"
+    },
+    {
+        "id": 3,
+        "version": 1,
+        "nome": "Vestuário"
+    },
+    {
+        "id": 4,
+        "version": 1,
+        "nome": "Outros"
+    }
+]

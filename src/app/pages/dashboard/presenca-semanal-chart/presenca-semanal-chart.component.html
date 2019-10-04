@@ -1,0 +1,11 @@
+<stacked-bar-chart *ngIf="!loading" 
+    [title]="'Presenças'" 
+    [description]="'Quantidade de presenças por dia'" 
+    [idChart]="'presenca'"
+    [backgroundColor]="'green'" 
+    [data]="presenca" 
+    (update)="update()"></stacked-bar-chart>
+
+<div class="loading">
+    <mat-spinner *ngIf="loading"></mat-spinner>
+</div>
